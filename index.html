@@ -9,23 +9,23 @@
   </head>
   <body>
     <header>
-      <h1>혜인이의 계산기</h1>
+      <h1>서진이의 계산기</h1>
     </header>
     <main>
       <section>
-        <input type="number" />
-        <select name="calculate">
+        <input type="number" id="userInput1"/>
+        <select name="calculate" id="operationType">
           <option value="sum">+</option>
           <option value="sub">-</option>
           <option value="mul">x</option>
           <option value="divide">/</option>
         </select>
-        <input type="number" />
+        <input type="number" id="userInput2"/>
         <h2>=</h2>
-        <h3>정답</h3>
+        <h3 id="answer">정답</h3>
       </section>
-      <button>결과는?</button>
+      <button id="resultBtn">결과는?</button>
     </main>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
