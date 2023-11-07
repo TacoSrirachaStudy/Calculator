@@ -9,8 +9,8 @@ Issue 속 내용을 참고 하여 기능 구현을 완료 해주세요 !! 🔥
 <table align="center">
   <tr>
     <td>
-      <a href="https://github.com/hae2n">
-        <img src="https://avatars.githubusercontent.com/hae2n" width="200"/>
+      <a href="https://github.com/hae2ni">
+        <img src="https://avatars.githubusercontent.com/hae2ni" width="200"/>
       </a>
     </td>
   </tr>
@@ -35,7 +35,7 @@ Issue 속 내용을 참고 하여 기능 구현을 완료 해주세요 !! 🔥
     </td>
     <td>
       <a href="https://github.com/binllionaire">
-        <img src="https://avatars.githubusercontent.com/binllionair" width="200"/>
+        <img src="https://avatars.githubusercontent.com/binllionaire" width="200"/>
       </a>
     </td>
     <td>
