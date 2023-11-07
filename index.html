@@ -13,18 +13,18 @@
     </header>
     <main>
       <section>
-        <input type="number" />
-        <select name="calculate">
-          <option value="sum">+</option>
-          <option value="sub">-</option>
-          <option value="mul">x</option>
-          <option value="divide">/</option>
+        <input id="first_number" type="text" />
+        <select id="selector" name="calculate">
+          <option id="sum" value="sum">+</option>
+          <option id="sub" value="sub">-</option>
+          <option id="mul" value="mul">x</option>
+          <option id="divide" value="divide">/</option>
         </select>
-        <input type="number" />
+        <input id="second_number" type="text" />
         <h2>=</h2>
-        <h3>정답</h3>
+        <h3 id="result">정답</h3>
       </section>
-      <button>결과는?</button>
+      <button type="button" id="result_button">결과는?</button>
     </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
