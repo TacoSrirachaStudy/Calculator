@@ -1,5 +1,3 @@
-import "./style.css";
-
 const $ = (selector: string) => document.querySelector(selector);
 
 const num1Input = $('input[type="number"]:nth-of-type(1)') as HTMLInputElement;
