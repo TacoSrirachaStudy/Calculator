@@ -1,18 +1,10 @@
-const input1: HTMLInputElement = document.querySelector(
-  "body > main > section > input[type=number]:nth-child(1)"
-) as HTMLInputElement;
-const input2: HTMLInputElement = document.querySelector(
-  "body > main > section > input[type=number]:nth-child(3)"
-) as HTMLInputElement;
-const operation: HTMLSelectElement = document.querySelector(
-  "body > main > section > select"
-) as HTMLSelectElement;
-const calculateButton: HTMLButtonElement = document.querySelector(
-  "body > main > button"
-) as HTMLButtonElement;
-const answer: HTMLHeadingElement = document.querySelector(
-  "body > main > section > h3"
-) as HTMLHeadingElement;
+import {
+  answer,
+  calculateButton,
+  input1,
+  input2,
+  operation,
+} from "./htmlElements";
 
 calculateButton.addEventListener("click", () => {
   const isInputEmpty: boolean = isEmpty(input1.value, input2.value);
