@@ -17,7 +17,7 @@ calculateButton.addEventListener("click", () => {
   answer.textContent = String(result); // 정답 출력
 });
 
-/* 입력 필드 검증 */
+/* 입력 필드 검증 함수 */
 function checkInput() {
   const isInputEmpty: boolean = isEmpty(input1.value, input2.value);
   if (isInputEmpty) {
