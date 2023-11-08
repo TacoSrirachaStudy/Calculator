@@ -7,17 +7,32 @@ import {
 } from "./htmlElements";
 
 calculateButton.addEventListener("click", () => {
+  if (!checkInput()) return; // 입력 필드 검증
+
+  const num1: number = Number(input1.value); // 입력값을 숫자로 변경
+  const num2: number = Number(input2.value);
+
+  const result = operate(num1, num2, operation.value); // 결과 연산
+
+  answer.textContent = String(result); // 정답 출력
+});
+
+/* 입력 필드 검증 */
+function checkInput() {
   const isInputEmpty: boolean = isEmpty(input1.value, input2.value);
   if (isInputEmpty) {
     alert("뭐 잊은거 없어?");
-    return;
+    return false;
   }
-  const num1: number = Number(input1.value);
-  const num2: number = Number(input2.value);
-  const result = operate(num1, num2, operation.value);
-  answer.textContent = String(result);
-});
+  return true;
+}
 
+/* 입력 필드가 비었는지 확인하는 함수 */
+function isEmpty(num1: string, num2: string): boolean {
+  return num1 === "" || num2 === "";
+}
+
+/* 결과 연산 함수 */
 function operate(num1: number, num2: number, sign: string): number {
   switch (sign) {
     case "sum":
@@ -31,8 +46,4 @@ function operate(num1: number, num2: number, sign: string): number {
     default:
       return 0;
   }
-}
-
-function isEmpty(num1: string, num2: string): boolean {
-  return num1 === "" || num2 === "";
 }
