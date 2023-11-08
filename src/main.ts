@@ -12,7 +12,7 @@ calculateButton.addEventListener("click", () => {
   const num1: number = Number(input1.value); // 입력값을 숫자로 변경
   const num2: number = Number(input2.value);
 
-  const result = operate(num1, num2, operation.value); // 결과 연산
+  const result = calculate(num1, num2, operation.value); // 결과 연산
 
   answer.textContent = String(result); // 정답 출력
 });
@@ -33,7 +33,7 @@ function isEmpty(num1: string, num2: string): boolean {
 }
 
 /* 결과 연산 함수 */
-function operate(num1: number, num2: number, sign: string): number {
+function calculate(num1: number, num2: number, sign: string): number {
   switch (sign) {
     case "sum":
       return num1 + num2;
